@@ -1,0 +1,43 @@
+﻿<Window x:Class="GrandMasterTrackerWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GrandMasterTrackerWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="444.834" Width="790.816">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="NewSession" Content="New Session" HorizontalAlignment="Left" Margin="34,31,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click" Height="20"/>
+        <StackPanel x:Name="StackPanel" HorizontalAlignment="Left" Height="66" Margin="221,28,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Shards:" HorizontalAlignment="Left" Margin="162,25,0,0" VerticalAlignment="Top" Width="54" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Height="26"/>
+        <Label Content="Exotics:" HorizontalAlignment="Left" Margin="162,40,0,0" VerticalAlignment="Top" Width="59" FontWeight="Bold" Height="26"/>
+        <StackPanel x:Name="eventlog" HorizontalAlignment="Left" Height="268" Margin="10,141,0,0" VerticalAlignment="Top" Width="206"/>
+        <StackPanel x:Name="savePanel" HorizontalAlignment="Left" Height="27" Margin="34,54,0,0" VerticalAlignment="Top" Width="85"/>
+        <Separator HorizontalAlignment="Left" Margin="95,160,0,159" Width="416" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <StackPanel x:Name="totalPanel" HorizontalAlignment="Left" Height="27" Margin="34,82,0,0" VerticalAlignment="Top" Width="85"/>
+        <TextBlock x:Name="totalShards" HorizontalAlignment="Left" Margin="112,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="59" FontSize="36" Grid.Column="1" Text="000"/>
+        <TextBlock x:Name="totalExotics" HorizontalAlignment="Left" Margin="113,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="59" FontSize="36" Grid.Column="1" Text="000"/>
+        <Label Content="Shards:" HorizontalAlignment="Left" Margin="37,46,0,0" VerticalAlignment="Top" Height="35" Width="75" FontSize="20" Grid.Column="1"/>
+        <Label Content="Exotics:" HorizontalAlignment="Left" Margin="37,114,0,0" VerticalAlignment="Top" Height="35" Width="76" FontSize="20" Grid.Column="1"/>
+        <TextBlock x:Name="totalRuns" HorizontalAlignment="Left" Margin="113,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="59" FontSize="36" Grid.Column="1" Text="000"/>
+        <Label Content="Runs:" HorizontalAlignment="Left" Margin="37,178,0,0" VerticalAlignment="Top" Height="35" Width="76" FontSize="20" Grid.Column="1"/>
+        <TextBlock x:Name="averageShards" HorizontalAlignment="Left" Margin="257,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="59" FontSize="36" Grid.Column="1" Text="000"/>
+        <Label Content="Average shards pr run:" HorizontalAlignment="Left" Margin="37,241,0,0" VerticalAlignment="Top" Height="35" Width="215" FontSize="20" Grid.Column="1"/>
+        <Label Content="Average exotics pr run:" HorizontalAlignment="Left" Margin="37,298,0,0" VerticalAlignment="Top" Height="35" Width="215" FontSize="20" Grid.Column="1"/>
+        <TextBlock x:Name="averageExotics" HorizontalAlignment="Left" Margin="257,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="59" FontSize="36" Grid.Column="1" Text="000"/>
+
+    </Grid>
+</Window>
